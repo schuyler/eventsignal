@@ -92,7 +92,12 @@ GEM
     debug (1.9.2)
       irb (~> 1.10)
       reline (>= 0.3.8)
+<<<<<<< HEAD
     diff-lcs (1.5.1)
+=======
+    dockerfile-rails (1.6.17)
+      rails (>= 3.0.0)
+>>>>>>> de70feb (Add Docker and Fly.io configurations)
     drb (2.2.1)
     erubi (1.13.0)
     globalid (1.2.1)
@@ -249,6 +254,7 @@ PLATFORMS
   aarch64-linux
   arm-linux
   arm64-darwin-21
+  arm64-darwin-23
   x86-linux
   x86_64-darwin
   x86_64-linux
@@ -257,6 +263,7 @@ DEPENDENCIES
   bootsnap
   cssbundling-rails
   debug
+  dockerfile-rails (>= 1.6)
   jbuilder
   jsbundling-rails
   pg (~> 1.1)
