@@ -75,6 +75,9 @@ GEM
       minitest (>= 5.1)
       mutex_m
       tzinfo (~> 2.0)
+    annotate (3.2.0)
+      activerecord (>= 3.2, < 8.0)
+      rake (>= 10.4, < 14.0)
     base64 (0.2.0)
     bigdecimal (3.1.8)
     bindex (0.8.1)
@@ -97,6 +100,11 @@ GEM
       rails (>= 3.0.0)
     drb (2.2.1)
     erubi (1.13.0)
+    factory_bot (6.4.6)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.4.3)
+      factory_bot (~> 6.4)
+      railties (>= 5.0.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.5)
@@ -250,16 +258,18 @@ GEM
 PLATFORMS
   aarch64-linux
   arm-linux
-  arm64-darwin
+  arm64-darwin-21
   x86-linux
   x86_64-darwin
   x86_64-linux
 
 DEPENDENCIES
+  annotate
   bootsnap
   cssbundling-rails
   debug
   dockerfile-rails (>= 1.6)
+  factory_bot_rails
   jbuilder
   jsbundling-rails
   pg (~> 1.1)
