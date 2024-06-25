@@ -5,6 +5,8 @@
 ```
 brew install ruby@3.3.3
 echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
+yarn install
+yarn build
 bundle install
 rails db:create
 rails server
