@@ -4,6 +4,9 @@
 /app/assets/builds/*
 !/app/assets/builds/.keep
 
+/public/*
+!public/.keep
+
 node_modules
 **/tmp
 **/log/*.log*
