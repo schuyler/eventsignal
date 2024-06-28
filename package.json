@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo-rails": "^8.0.4",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-router-dom": "^5.3.3",
     "autoprefixer": "^10.4.19",
     "esbuild": "^0.21.5",
     "postcss": "^8.4.38",
@@ -10,6 +15,8 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.24.0",
     "tailwindcss": "^3.4.4",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.2",
     "yarn": "^1.22.22"
   },
   "devDependencies": {
