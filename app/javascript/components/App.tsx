@@ -12,14 +12,12 @@ const App: React.FC = () => (
           <li>
             <Link to="/">Home</Link>
           </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
+          <li>{/* <Link to="/about">About</Link> */}</li>
         </ul>
       </nav>
 
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
+      <Route path="/" element={<Home />} />
+      {/* <Route path="/about" element={<About />} /> */}
     </div>
   </Router>
 );
