@@ -6,14 +6,18 @@ const About: React.FC = () => <h1 className="text-3xl font-bold">About</h1>;
 
 const App: React.FC = () => (
   <Router>
-    <div>
-      <nav>
-        <ul>
+    <div className="max-w-4xl mx-auto px-4">
+      <nav className="bg-gray-800 text-white p-4 rounded-md">
+        <ul className="flex space-x-4 justify-center">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" className="hover:text-gray-300">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" className="hover:text-gray-300">
+              About
+            </Link>
           </li>
         </ul>
       </nav>
