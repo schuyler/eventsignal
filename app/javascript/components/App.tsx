@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Login from "./Login";
 
 const Home: React.FC = () => <h1 className="text-3xl font-bold">Home</h1>;
 const About: React.FC = () => <h1 className="text-3xl font-bold">About</h1>;
@@ -19,12 +20,18 @@ const App: React.FC = () => (
               About
             </Link>
           </li>
+          <li>
+            <Link to="/login" className="hover:text-gray-300">
+              Login
+            </Link>
+          </li>
         </ul>
       </nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </div>
   </Router>
