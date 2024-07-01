@@ -6,5 +6,9 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root 'pages#home'
+  
+  # Catch-all route for React SPA
+  # This routes all non-AJAX and non-API requests to 'pages#home', allowing React Router to handle routing.
+  get '*path', to: 'pages#home', constraints: ->(request) { !request.xhr? && request.format.html? }
 end
