@@ -7,5 +7,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'pages#home'
-  #get '*path', to: 'pages#home'
+  
+  # Catch-all route for React SPA
+  # This routes all non-AJAX and non-API requests to 'pages#home', allowing React Router to handle routing.
+  get '*path', to: 'pages#home', constraints: ->(request) { !request.xhr? && request.format.html? }
 end
