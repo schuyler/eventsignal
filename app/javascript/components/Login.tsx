@@ -1,12 +1,15 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Step 1
 
 const Login = () => {
   const [inputValue, setInputValue] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     // Submit form data to /login path
     // You can use fetch or axios to POST data to your backend
+    navigate("/enter-code");
     console.log("Submitting:", inputValue);
   };
 
