@@ -5,4 +5,11 @@ module.exports = {
     "./app/assets/stylesheets/**/*.css",
     "./app/javascript/**/*.{js,ts,tsx}",
   ],
+  theme: {
+    extend: {
+      colors: {
+        "brand-blue": "#007bff",
+      },
+    },
+  },
 };

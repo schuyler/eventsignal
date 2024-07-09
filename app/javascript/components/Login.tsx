@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Step 1
+import { useNavigate } from "react-router-dom";
+import Button from "./Button"; // Step 1
 
 const Login = () => {
   const [inputValue, setInputValue] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+  const handleSubmit = () => {
+    // event: React.FormEvent<HTMLFormElement>
+    // event.preventDefault();
     // Submit form data to /login path
     // You can use fetch or axios to POST data to your backend
     navigate("/enter-code");
@@ -15,10 +17,7 @@ const Login = () => {
 
   return (
     <div className="flex items-center justify-center h-screen bg-black">
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white p-6 my-8 rounded-lg shadow-lg"
-      >
+      <form className="bg-white p-6 my-8 rounded-lg shadow-lg">
         <div className="mb-4">
           <label
             htmlFor="userInput"
@@ -35,12 +34,7 @@ const Login = () => {
             placeholder="Enter your email or phone"
           />
         </div>
-        <button
-          type="submit"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-        >
-          Login
-        </button>
+        <Button onClick={handleSubmit}>Login</Button>
       </form>
     </div>
   );
