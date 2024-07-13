@@ -16,12 +16,9 @@
 
 * Create an event
 * Date / Time/ Location, name, description, payment link, capacity, +1s welcome
-* Add co-hosts 
-* Remove co-hosts 
+* Add additional hosts 
+* Remove other hosts
 * Cancel an event 
-
-## As a host or co-host, I want to…
-
 * Upload banner image 
 * Edit an event 
 * Remove banner
