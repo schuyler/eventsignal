@@ -19,10 +19,7 @@ const Login = () => {
     <div className="flex items-center justify-center h-screen bg-black">
       <form className="bg-white p-6 my-8 rounded-lg shadow-lg">
         <div className="mb-4">
-          <label
-            htmlFor="userInput"
-            className="block text-gray-700 text-sm font-bold mb-2"
-          >
+          <label htmlFor="userInput" className="login-title">
             Email or Phone Number
           </label>
           <input
