@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Login from "./Login";
+import EnterCode from "./EnterCode";
 
 const Home: React.FC = () => <h1 className="text-3xl font-bold">Home</h1>;
 const About: React.FC = () => <h1 className="text-3xl font-bold">About</h1>;
@@ -32,6 +33,7 @@ const App: React.FC = () => (
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/enter-code" element={<EnterCode />} />
       </Routes>
     </div>
   </Router>
